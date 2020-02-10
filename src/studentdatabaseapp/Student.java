@@ -1,10 +1,11 @@
 package studentdatabaseapp;
+
 import java.util.Scanner;
 
 public class Student {
-    private String firstName;
-    private String lastName;
-    private int gradeYear;
+    private final String firstName;
+    private final String lastName;
+    private final int gradeYear;
     private String studentID;
     private String courses = "";
     private int tuitionBalance;
@@ -42,10 +43,12 @@ public class Student {
             // Get input from user
             String course = in.nextLine();
             if (!course.equals("Q")) {
-                courses +=  "\n  " + course;
+                courses += "\n  " + course;
                 int costOfCourse = 600;
                 tuitionBalance += costOfCourse;
-            } else { break; }
+            } else {
+                break;
+            }
         }
     }
 
