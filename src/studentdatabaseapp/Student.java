@@ -3,10 +3,10 @@ package studentdatabaseapp;
 import java.util.Scanner;
 
 public class Student {
-    private final String firstName;
-    private final String lastName;
-    private final int gradeYear;
-    private String studentID;
+    public final String firstName;
+    public final String lastName;
+    public final int gradeYear;
+    public String studentID;
     private String courses = "";
     private int tuitionBalance;
     private static int id = 1000;
